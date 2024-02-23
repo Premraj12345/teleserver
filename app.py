@@ -21,7 +21,8 @@ def stream_file(file_id):
                          download_name=file_path)
 
 @app.route('/')
-def stream_file():
+def home():
     return "<h1> Working </h1>"
+    
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
